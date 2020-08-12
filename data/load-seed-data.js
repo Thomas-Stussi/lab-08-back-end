@@ -9,6 +9,7 @@ run();
 async function run() {
 
   try {
+    await client.connect();
 
     await Promise.all(
       foods.map(food => {
