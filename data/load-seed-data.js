@@ -15,7 +15,7 @@ async function run() {
       foods.map(food => {
         return client.query(`
                     INSERT INTO foods (name, deliciousness, can_be_vegetarian, meal)
-                    VALUES ($1, $2, $3, 4$);
+                    VALUES ($1, $2, $3, $4);
                 `,
         [food.name, food.deliciousness, food.can_be_vegetarian, food.meal]);
       })
