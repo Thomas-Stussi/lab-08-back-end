@@ -13,7 +13,7 @@ async function run() {
 
     // run a query to create tables
     await client.query(`
-                CREATE TABLE animals (
+                CREATE TABLE foods (
                   id SERIAL PRIMARY KEY NOT NULL,
                   name VARCHAR(512) NOT NULL,
                   deliciousness INTEGER NOT NULL,
