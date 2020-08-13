@@ -2,8 +2,8 @@ require('dotenv').config();
 
 const { execSync } = require('child_process');
 
-const fakeRequest = require('supertest');
-const app = require('../lib/app');
+// const fakeRequest = require('supertest');
+// const app = require('../lib/app');
 const client = require('../lib/client');
 
 describe('app routes', () => {
@@ -53,7 +53,7 @@ describe('app routes', () => {
       },
     ];
     
-    const data = const expectation = [
+    const data = [
       {
         name: 'pizza',
         deliciousness: 10,
@@ -84,6 +84,6 @@ describe('app routes', () => {
       },
     ];
 
-    expect(data.body).toEqual(expectation);
+    expect(data.body).deepEqual(expectation);
   });
 });
