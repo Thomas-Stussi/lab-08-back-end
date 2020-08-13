@@ -84,6 +84,6 @@ describe('app routes', () => {
       },
     ];
 
-    expect(data.body).deepEqual(expectation);
+    expect(data.body).toEqual(expectation);
   });
 });
