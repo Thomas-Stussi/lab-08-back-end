@@ -14,10 +14,10 @@ async function run() {
     await Promise.all(
       foods.map(food => {
         return client.query(`
-                    INSERT INTO foods (name, deliciousness, can_be_vegetarian, meal)
-                    VALUES ($1, $2, $3, $4);
+                    INSERT INTO foods (name, deliciousness, can_be_vegetarian, meal, img)
+                    VALUES ($1, $2, $3, $4, $5);
                 `,
-        [food.name, food.deliciousness, food.can_be_vegetarian, food.meal]);
+        [food.name, food.deliciousness, food.can_be_vegetarian, food.meal, food.img]);
       })
     );
     

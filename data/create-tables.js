@@ -19,6 +19,7 @@ async function run() {
                   deliciousness INTEGER NOT NULL,
                   can_be_vegetarian BOOLEAN NOT NULL,
                   meal VARCHAR(10) NOT NULL
+                  img VARCHAR(1000) NOT NULL
                 );
         `);
 

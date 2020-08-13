@@ -3,24 +3,28 @@ module.exports = [
     name: 'pizza',
     deliciousness: 10,
     can_be_vegetarian: true,
-    meal: 'dinner'
+    meal: 'dinner',
+    img: 'https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?cs=srgb&dl=pexels-engin-akyurt-2619967.jpg&fm=jpg'
   },
   {
     name: 'pancakes',
     deliciousness: 9,
     can_be_vegetarian: true,
-    meal: 'breakfast'
+    meal: 'breakfast',
+    img: 'https://images.pexels.com/photos/574111/pexels-photo-574111.jpeg?cs=srgb&dl=pexels-sheena-wood-574111.jpg&fm=jpg'
   },
   {
     name: 'panini',
     deliciousness: 8,
     can_be_vegetarian: true,
-    meal: 'lunch'
+    meal: 'lunch',
+    img: 'https://images.pexels.com/photos/1885578/pexels-photo-1885578.jpeg?cs=srgb&dl=pexels-lisa-fotios-1885578.jpg&fm=jpg'
   },
   {
     name: 'pancetta',
     deliciousness: 7,
     can_be_vegetarian: false,
-    meal: 'lunch'
+    meal: 'snack',
+    img: 'https://images.pexels.com/photos/4202891/pexels-photo-4202891.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4202891.jpg&fm=jpg'
   },
 ];
