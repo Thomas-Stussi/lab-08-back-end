@@ -19,15 +19,19 @@ async function run() {
                   id SERIAL PRIMARY KEY,
                   email VARCHAR(256) NOT NULL,
                   hash VARCHAR(512) NOT NULL
+                );
+                CREATE TABLE meals (
+                  id SERIAL PRIMARY KEY NOT NULL,
+                  meal VARCHAR(256) NOT NULL
                 );           
                 CREATE TABLE foods (
                   id SERIAL PRIMARY KEY NOT NULL,
                   name VARCHAR(512) NOT NULL,
                   deliciousness INTEGER NOT NULL,
                   can_be_vegetarian BOOLEAN NOT NULL,
-                  meal VARCHAR(10) NOT NULL,
                   img VARCHAR(1000) NOT NULL,
-                  owner_id INTEGER NOT NULL REFERENCES users(id)
+                  owner_id INTEGER NOT NULL REFERENCES users(id),
+                  meal_id INTEGER NOT NULL REFERENCES meals(id)
                 );
         `);
 
